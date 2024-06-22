@@ -24,3 +24,53 @@ padding: 10px 20px; /* espaçameto interno de 10px em cima e em baixo e 20px dos
 div{
     padding: 30px;
 }
+
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    position: relative; /* mportante para o menu tomar como referêcia */
+}
+
+ul li{
+    list-style: none;
+}
+
+.texto{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.lista{
+    display: none;
+    position: absolute; /* aqui está difinido onde o menu vai aparecer */
+    top: 100%;
+    background-color: rgb(99, 72, 72);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* fazendo o menu apaarecer quando clicar */
+.caixa:checked ~ .lista{
+    display: block;
+} 
+
+/* desaparecendo a caixa de seleção */
+#menu{
+    display: none;
+}
+
+.lista-item{
+    padding: 12px 0;
+}
