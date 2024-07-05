@@ -29,7 +29,6 @@ a{
 }
 
 .lista{
-    padding: 10px;
     display: none;
     position: absolute; /* aqui está difinido onde o menu vai aparecer */
     top: 100%;
