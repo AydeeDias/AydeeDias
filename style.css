@@ -40,5 +40,6 @@ a{
     justify-content: center;
 }
 .gfd{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
