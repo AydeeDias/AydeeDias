@@ -12,22 +12,8 @@ header{
     padding: 10px; /* espaçamento interno de 10px em todos os lados */
 }
 
-section{
-display: flex;
-align-items: center;
-background-color: black;
-color: white; /* cor do texto branca */
-margin: 10px 0; /* margem de 10 px em cima e em baixo, e sem margem os lados */
-padding: 10px 20px; /* espaçameto interno de 10px em cima e em baixo e 20px dos lados */
-}
 
-div{
-    padding: 30px;
-}
 
-*{
-    margin: 0;
-}
 header{
     display: flex;
     align-items: center;
