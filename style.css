@@ -4,22 +4,13 @@
     padding: 0; /* sem espaço interno */
 }
 
-header{
-    background-color: gray; /* cor de fundo */
-    display: flex; /* disposição lexivel - lado a lado */
-    align-items: center; /* alinhado verticalmente */
-    justify-content: space-between; /* espaçamento entre os itens */
-    padding: 10px; /* espaçamento interno de 10px em todos os lados */
-}
-
-
 
 header{
     display: flex;
     align-items: center;
     padding: 12px;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(67, 55, 235);
     color: white;
     position: relative; /* mportante para o menu tomar como referêcia */
 }
