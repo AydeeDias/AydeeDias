@@ -24,16 +24,6 @@ a{
     text-decoration: none;
 }
 
-.lista{
-    display: none;
-    position: absolute; /* aqui está difinido onde o menu vai aparecer */
-    top: 100%;
-    background-color: rgb(99, 72, 72);
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
 /* fazendo o menu apaarecer quando clicar */
 .caixa:checked ~ .lista{
     display: block;
