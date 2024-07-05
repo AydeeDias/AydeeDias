@@ -54,4 +54,6 @@ a{
 .gsr{
     background-color: #101728;
     color: white;
+    display: flex;
+    justify-content: center;
 }
