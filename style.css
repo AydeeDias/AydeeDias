@@ -37,7 +37,7 @@ a{
     background-color: #101728;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .gfd{
     display: flex;
