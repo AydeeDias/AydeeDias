@@ -15,10 +15,6 @@ header{
     position: relative; /* mportante para o menu tomar como referêcia */
 }
 
-ul li{
-    list-style: none;
-}
-
 .texto{
     color: white;
 }
