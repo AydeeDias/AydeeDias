@@ -1,7 +1,7 @@
 /*seletor universal - todos vão ter essa formatação */
 *{
-    margin: 0; /* sem margem */
-    padding: 10; /* sem espaço interno */
+    margin: 0; 
+    padding: 10; 
 }
 
 
