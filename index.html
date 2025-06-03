@@ -39,11 +39,11 @@
             text-align: center;
         }
         td, th {
-            border: 1px solid #000;
+            border: 1px solid #f0f0f0;
             padding: 10px;
         }
         th {
-            background-color: #f0f0f0;
+            background-color: #101728;
         }
         caption {
             margin-bottom: 10px;
@@ -54,37 +54,37 @@
 </head>
 <body>
     <table>
-        <caption>Contagem de Pessoas</caption>
+        <caption>Contagem de Alimentos</caption>
         <tr>
-            <th>Crianças</th>
-            <th>Adultos</th>
-            <th>Idosos</th>
+            <th>Ovos</th>
+            <th>Laranja</th>
+            <th>Alface</th>
         </tr>
         <tr>
-            <td id="criancas">0</td>
-            <td id="adultos">0</td>
-            <td id="idosos">0</td>
+            <td id="Ovos">0</td>
+            <td id="Laranja">0</td>
+            <td id="Alface">0</td>
         </tr>
     </table>
 
     <script>
-        let criancas = 0;
-        let adultos = 0;
-        let idosos = 0;
+        let Ovos = 0;
+        let Laranja = 0;
+        let Alfaca = 0;
 
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case '1':
-                    criancas++;
-                    document.getElementById('criancas').textContent = criancas;
+                    ovos++;
+                    document.getElementById('Ovos').textContent = criancas;
                     break;
                 case '2':
-                    adultos++;
-                    document.getElementById('adultos').textContent = adultos;
+                    laranja++;
+                    document.getElementById('Laranja').textContent = adultos;
                     break;
                 case '3':
-                    idosos++;
-                    document.getElementById('idosos').textContent = idosos;
+                    alface++;
+                    document.getElementById('Alface').textContent = idosos;
                     break;
             }
         });
