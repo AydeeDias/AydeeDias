@@ -30,7 +30,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contador por Faixa Etária</title>
+    <title>contador de alimentos</title>
     <style>
         table {
             border-collapse: collapse;
@@ -61,9 +61,9 @@
             <th>Alface</th>
         </tr>
         <tr>
-            <td id="Ovos">0</td>
-            <td id="Laranja">0</td>
-            <td id="Alface">0</td>
+            <td id="ovos">0</td>
+            <td id="laranja">0</td>
+            <td id="alface">0</td>
         </tr>
     </table>
 
@@ -76,15 +76,15 @@
             switch (event.key) {
                 case '1':
                     ovos++;
-                    document.getElementById("Ovos").textContent = ovos;
+                    document.getElementById('Ovos').textContent = ovos;
                     break;
                 case '2':
                     laranja++;
-                    document.getElementById("Laranja").textContent = laranja;
+                    document.getElementById('Laranja').textContent = laranja;
                     break;
                 case '3':
                     alface++;
-                    document.getElementById("Alface").textContent = alface;
+                    document.getElementById('Alface').textContent = alface;
                     break;
             }
         });
