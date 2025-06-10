@@ -28,28 +28,6 @@
     </section>
 </body>
 
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 300px;
-            margin: 50px auto;
-            text-align: center;
-        }
-        td, th {
-            border: 1px solid #f0f0f0;
-            padding: 10px;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
-        caption {
-            margin-bottom: 10px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    </style>
-</head>
 <body>
     <table>
         <caption>Contagem de Alimentos</caption>
@@ -66,32 +44,31 @@
     </table>
 
     <script>
-        // Inicializando as contagens
+        // valor inicial da tabela
         let ovos = 0;
         let laranja = 0;
         let alface = 0;
 
-        // Função para atualizar o conteúdo das células da tabela
         function atualizarTabela() {
             document.getElementById('Ovos').textContent = ovos;
             document.getElementById('Laranja').textContent = laranja;
             document.getElementById('Alface').textContent = alface;
         }
 
-        // Escutando as teclas pressionadas
+        // comando das teclas
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case '1':
-                    ovos++;  // Aumenta Ovos
-                    atualizarTabela();  // Atualiza a tabela
+                    ovos++; 
+                    atualizarTabela();
                     break;
                 case '2':
-                    laranja++;  // Aumenta Laranja
-                    atualizarTabela();  // Atualiza a tabela
+                    laranja++;
+                    atualizarTabela(); 
                     break;
                 case '3':
-                    alface++;  // Aumenta Alface
-                    atualizarTabela();  // Atualiza a tabela
+                    alface++;  
+                    atualizarTabela();  
                     break;
             }
         });
