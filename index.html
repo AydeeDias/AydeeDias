@@ -54,9 +54,9 @@
     <table>
         <caption>Contagem de Alimentos</caption>
         <tr>
-            <th>Ovos1</th>
-            <th>Laranja2</th>
-            <th>Alface3</th>
+            <th>Ovos</th>
+            <th>Laranja</th>
+            <th>Alface</th>
         </tr>
         <tr>
             <td id="Ovos1">0</td>
@@ -67,29 +67,29 @@
 
     <script>
         // valor inicial da tabela
-        let ovos1 = 0;
-        let laranja2 = 0;
-        let alface3 = 0;
+        let ovos = 0;
+        let laranja = 0;
+        let alface = 0;
 
         function atualizarTabela() {
-            document.getElementById('Ovos1').textContent = ovos1;
-            document.getElementById('Laranja2').textContent = laranja2;
-            document.getElementById('Alface3').textContent = alface3;
+            document.getElementById('Ovos1').textContent = ovos;
+            document.getElementById('Laranja2').textContent = laranja;
+            document.getElementById('Alface3').textContent = alface;
         }
 
         // comando das teclas
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case '1':
-                    ovos1++; 
+                    ovos++; 
                     atualizarTabela();
                     break;
                 case '2':
-                    laranja2++;
+                    laranja++;
                     atualizarTabela(); 
                     break;
                 case '3':
-                    alface3++;  
+                    alface++;  
                     atualizarTabela();  
                     break;
             }
