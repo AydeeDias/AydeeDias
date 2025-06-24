@@ -14,32 +14,31 @@ header{
     position: relative; /* mportante para o menu tomar como referêcia */
 }
 
- table {
-        background-color: #101728;
-        color: white;
-        border-collapse: collapse;
-        width: 300px;
-        text-align: center;
-        margin: 50px auto;
-        
-    }
-    td, th {
-        background-color: #101728;
-        color: white;
-        border: 1px solid #101728;
-        padding: 10px;
-    }
-    th {
-        background-color: #101728;
-        color: white
-    }
-    caption {
-        margin-bottom: 10px;
-        font-size: 1.2em;
-        font-weight: bold;
-        background-color: #101728;
-        color: white;
-     }
+table {
+    background-color: #101728;
+    color: white;
+    border-collapse: collapse;
+    width: 300px;
+    text-align: center;
+    margin: 50px auto;
+}
+td, th {
+    background-color: #101728;
+    color: white;
+    border: 1px solid #101728;
+    padding: 10px;
+}
+th {
+    background-color: #101728;
+    color: white
+}
+caption {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #101728;
+    color: white;
+}
 
 ul li{
     list-style: none;
