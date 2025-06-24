@@ -14,26 +14,6 @@ header{
     position: relative; /* mportante para o menu tomar como referêcia */
 }
 
- table {
-        background-color: #101728;
-        border-collapse: collapse;
-        width: 300px;
-        margin: 50px auto;
-        text-align: center;
-    }
-    td, th {
-        border: 1px solid #f0f0f0;
-        padding: 10px;
-    }
-    th {
-        background-color: #f0f0f0;
-    }
-    caption {
-        margin-bottom: 10px;
-        font-size: 1.2em;
-        font-weight: bold;
-     }
-
 ul li{
     list-style: none;
 }
