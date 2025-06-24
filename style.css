@@ -15,12 +15,13 @@ header{
 }
 
  table {
+        background-color: #101728;
+        color: white;
         border-collapse: collapse;
         width: 300px;
         text-align: center;
         margin: 50px auto;
-        background-color: #101728;
-        color: white
+        
     }
     td, th {
         background-color: #101728;
