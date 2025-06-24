@@ -21,11 +21,14 @@ header{
         text-align: center;
     }
     td, th {
+        background-color: #101728;
+        color: white;
         border: 1px solid #f0f0f0;
         padding: 10px;
     }
     th {
-        background-color: #f0f0f0;
+        background-color: #101728;
+        color: white
     }
     caption {
         margin-bottom: 10px;
