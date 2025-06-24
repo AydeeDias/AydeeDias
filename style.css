@@ -19,6 +19,8 @@ header{
         width: 300px;
         margin: 50px auto;
         text-align: center;
+        background-color: #101728;
+        color: white
     }
     td, th {
         background-color: #101728;
