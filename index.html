@@ -46,26 +46,26 @@
         </tr>
     </table>
     <script>
-        let ovos = 0;
-        let laranja = 0;
-        let alface = 0;
+        let ovo = 0;
+        let laranjas = 0;
+        let alfaces = 0;
         function atualizarTabela() {
-            document.getElementById('Ovos1').textContent = ovos;
-            document.getElementById('Laranja2').textContent = laranja;
-            document.getElementById('Alface3').textContent = alface;
+            document.getElementById('Ovos1').textContent = ovo;
+            document.getElementById('Laranja2').textContent = laranjas;
+            document.getElementById('Alface3').textContent = alfaces;
         }
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case '1':
-                    ovos++;
+                    ovo++;
                     atualizarTabela();
                     break;
                 case '2':
-                    laranja++;
+                    laranjas++;
                     atualizarTabela();
                     break;
                 case '3':
-                    alface++;
+                    alfaces++;
                     atualizarTabela();
                     break;
             }
@@ -111,29 +111,29 @@
 
     <script>
         // valor inicial da tabela
-        let ovos = 0;
-        let laranja = 0;
-        let alface = 0;
+        let Dúzia = 0;
+        let laranjapera = 0;
+        let pé = 0;
 
         function atualizarTabela() {
-            document.getElementById('Ovos4').textContent = ovos;
-            document.getElementById('Laranja5').textContent = laranja;
-            document.getElementById('Alface6').textContent = alface;
+            document.getElementById('Ovos4').textContent = dúzia;
+            document.getElementById('Laranja5').textContent = laranjapera;
+            document.getElementById('Alface6').textContent = pé;
         }
 
         // comando das teclas
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case '4':
-                    ovos++;
+                    dúzia++;
                     atualizarTabela();
                     break;
                 case '5':
-                    laranja++;
+                    laranjapera++;
                     atualizarTabela();
                     break;
                 case '6':
-                    alface++;
+                    pé++;
                     atualizarTabela();
                     break;
             }
@@ -165,29 +165,29 @@
 
     <script>
         // valor inicial da tabela
-        let ovos = 0;
-        let laranja = 0;
-        let alface = 0;
+        let caixaovos = 0;
+        let laranjinha = 0;
+        let cabeçadealface = 0;
 
         function atualizarTabela() {
-            document.getElementById('Ovosd').textContent = ovos;
-            document.getElementById('Laranjae').textContent = laranja;
-            document.getElementById('Alfacef').textContent = alface;
+            document.getElementById('Ovosd').textContent = caixaovos;
+            document.getElementById('Laranjae').textContent = laranjinha;
+            document.getElementById('Alfacef').textContent = cbeçadealface;
         }
 
         // comando das teclas
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case 'd':
-                    ovos++;
+                    caixaovos++;
                     atualizarTabela();
                     break;
                 case 'e':
-                    laranja++;
+                    laranjinha++;
                     atualizarTabela();
                     break;
                 case 'f':
-                    alface++;
+                    cabeçadealface++;
                     atualizarTabela();
                     break;
             }
