@@ -60,11 +60,15 @@ a{
 }
 .gsr{
     background-color: #101728;
-    color: rgb(74, 147, 175);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 }
 .gfd{
     display: flex;
     justify-content: center;
+}
+
+footer{
+     background-color: #3669b6;
 }
