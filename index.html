@@ -98,14 +98,14 @@
     <table>
         <caption>Contagem de Alimentos</caption>
         <tr>
-            <th>Ovos</th>
-            <th>Laranja</th>
-            <th>Alface</th>
+            <th>Dúzia</th>
+            <th>Laranja pera</th>
+            <th>Pé</th>
         </tr>
         <tr>
-            <td id="Ovosa">0</td>
-            <td id="Laranjab">0</td>
-            <td id="Alfacec">0</td>
+            <td id="Dúziaa">0</td>
+            <td id="Laranja perab">0</td>
+            <td id="Péc">0</td>
         </tr>
     </table>
 
@@ -152,14 +152,14 @@
     <table>
         <caption>Contagem de Alimentos</caption>
         <tr>
-            <th>Ovos</th>
-            <th>Laranja</th>
-            <th>Alface</th>
+            <th>Caixa de ovos</th>
+            <th>Laranjinha</th>
+            <th>Cabeça de alface</th>
         </tr>
         <tr>
-            <td id="Ovosd">0</td>
-            <td id="Laranjae">0</td>
-            <td id="Alfacef">0</td>
+            <td id="Caixa de ovosd">0</td>
+            <td id="Laranjinhae">0</td>
+            <td id="Cabeça de lfacef">0</td>
         </tr>
     </table>
 
@@ -170,7 +170,7 @@
         let cabeçadealface = 0;
 
         function atualizarTabela() {
-            document.getElementById('Ovosd').textContent = caixaovos;
+            document.getElementById('Ovosd').textContent = caixadeovos;
             document.getElementById('Laranjae').textContent = laranjinha;
             document.getElementById('Alfacef').textContent = cbeçadealface;
         }
@@ -179,7 +179,7 @@
         document.addEventListener('keydown', function (event) {
             switch (event.key) {
                 case 'd':
-                    caixaovos++;
+                    caixadeovos++;
                     atualizarTabela();
                     break;
                 case 'e':
