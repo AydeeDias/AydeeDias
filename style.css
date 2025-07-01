@@ -60,7 +60,7 @@ a{
 }
 .gsr{
     background-color: #101728;
-    color: white;
+    color: rgb(74, 147, 175);
     display: flex;
     justify-content: center;
 }
