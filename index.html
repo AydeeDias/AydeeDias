@@ -3,333 +3,349 @@
 <html lang="pt-br">
 
 <head>
-<body>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conecção do Campo com a Cidade</title>
-<link rel="stylesheet" href="style.css">
-<header>
-<h1>Conexão do Campo com a Cidade</h1>
-<input type="checkbox" id="menu" class="caixa">
-<label form="menu">
-</label>
-<ul class="lista">
-<li class="lista-item"> <a href=>Saiba mais sobre:</a> </li>
-<li class="lista-item"> <a href="https://www.bbc.com/portuguese/geral-55467580"> • Ovos</a> </li>
-<li class="lista-item"> <a href="https://brasilescola.uol.com.br/frutas/laranja.htm"> • Laranja</a> </li>
-<li class="lista-item"> <a href="https://brasilescola.uol.com.br/saude/alface.htm"> • Alface</a> </li>
-</ul>
-</header>
 
-<section class="gsr">
-<h1 class="ef">Aqui você saberá quantos ovos, laranjas e pés de alface são colhidos no dia a dia!</h1>
-</section>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecção do Campo com a Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h1>Conexão do Campo com a Cidade</h1>
+        <input type="checkbox" id="menu" class="caixa">
+        <label form="menu">
+        </label>
+        <ul class="lista">
+            <li class="lista-item"> <a href=>Saiba mais sobre:</a> </li>
+            <li class="lista-item"> <a href="https://www.bbc.com/portuguese/geral-55467580"> • Ovos</a> </li>
+            <li class="lista-item"> <a href="https://brasilescola.uol.com.br/frutas/laranja.htm"> • Laranja</a> </li>
+            <li class="lista-item"> <a href="https://brasilescola.uol.com.br/saude/alface.htm"> • Alface</a> </li>
+        </ul>
+    </header>
+    <section class="gsr">
+        <h1 class="ef">Aqui você saberá quantos ovos, laranjas e pés de alface são colhidos no dia a dia!</h1>
+    </section>
 </body>
 </head>
 
 <html>
+
 <head>
+
 <body>
+    <table>
+        <caption>Contagem de Alimentos</caption>
+        <tr>
+            <th>Ovos</th>
+            <th>Laranja</th>
+            <th>Alface</th>
+        </tr>
+        <tr>
+            <td id="Ovos1">0</td>
+            <td id="Laranja2">0</td>
+            <td id="Alface3">0</td>
+        </tr>
+    </table>
+    <script>
+        let ovos = 0;
+        let laranja = 0;
+        let alface = 0;
+        function atualizarTabela() {
+            document.getElementById('Ovos1').textContent = ovos;
+            document.getElementById('Laranja2').textContent = laranja;
+            document.getElementById('Alface3').textContent = alface;
+        }
+        document.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case '1':
+                    ovos++;
+                    atualizarTabela();
+                    break;
+                case '2':
+                    laranja++;
+                    atualizarTabela();
+                    break;
+                case '3':
+                    alface++;
+                    atualizarTabela();
+                    break;
+            }
+        });
+    </script>
 
-<table>
-<caption>Contagem de Alimentos</caption>
-<tr>
-<th>Ovos</th>
-<th>Laranja</th>
-<th>Alface</th>
-</tr>
-<tr>
-<td id="Ovos1">0</td>
-<td id="Laranja2">0</td>
-<td id="Alface3">0</td>
-</tr>
-</table>
+    <section class="gsr">
+        <div>
+            <h1>Ajuda no controle de desperdício</h1>
+            <br>
+            <p>Como ser útil para a ciência?
+                <br>
+                Os pesquisadores podem acompanhar os número e retirar dados como número de alimentos colhidos,<br>
+                vendidos e revendido. analisando assim o consumo e o desperdício.
+            </p>
+        </div>
+        <img src="linda-garota-sorridente-usando-telefone-celular-olhando-para-o-smartphone-satisfeito_1258-19053.avif"
+            alt="pessoa mexendo no celular">
+    </section>
 
-<script>
-// valor inicial da tabela
-let ovos = 0;
-let laranja = 0;
-let alface = 0;
+    <section class="gsr">
+        <div>
+            <h1>Alimentos colhidos no campo:</h1>
+            <br>
+            <br>
+            <img src="parede-viva-1.jpg" alt="mural verde">
+        </div>
+    </section>
 
-function atualizarTabela() {
-document.getElementById('Ovos1').textContent = ovos;
-document.getElementById('Laranja2').textContent = laranja;
-document.getElementById('Alface3').textContent = alface;
-}
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
 
-// comando das teclas
-document.addEventListener('keydown', function (event) {
-switch (event.key) {
-case '1':
-ovos++;
-atualizarTabela();
-break;
-case '2':
-laranja++;
-atualizarTabela();
-break;
-case '3':
-alface++;
-atualizarTabela();
-break;
-}
-});
-</script>
+        td,
+        th {
+            border: 1px solid #f0f0f0;
+            padding: 10px;
+        }
 
-<section class="gsr">
-<div>
-<h1>Ajuda no controle de desperdício</h1>
-<br>
-<p>Como ser útil para a ciência?
-<br>
-Os pesquisadores podem acompanhar os número e retirar dados como número de alimentos colhidos,<br> vendidos e revendido. analisando assim o consumo e o desperdício.</p>
-</div>
-<img src="linda-garota-sorridente-usando-telefone-celular-olhando-para-o-smartphone-satisfeito_1258-19053.avif" alt="pessoa mexendo no celular">
-</section>
+        th {
+            background-color: #f0f0f0;
+        }
 
-<section class="gsr">
-<div>
-<h1>Alimentos colhidos no campo:</h1>
-<br>
-<br>
-<img src="parede-viva-1.jpg" alt="mural verde">
-</div>
-</section>
+        caption {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
 
-<style>
-table {
-border-collapse: collapse;
-width: 300px;
-margin: 50px auto;
-text-align: center;
-}
-td, th {
-border: 1px solid #f0f0f0;
-padding: 10px;
-}
-th {
-background-color: #f0f0f0;
-}
-caption {
-margin-bottom: 10px;
-font-size: 1.2em;
-font-weight: bold;
-}
-</style>
+    <table>
+        <caption>Contagem de Alimentos</caption>
+        <tr>
+            <th>Ovos</th>
+            <th>Laranja</th>
+            <th>Alface</th>
+        </tr>
+        <tr>
+            <td id="Ovosa">0</td>
+            <td id="Laranjab">0</td>
+            <td id="Alfacec">0</td>
+        </tr>
+    </table>
 
-<table>
-<caption>Contagem de Alimentos</caption>
-<tr>
-<th>Ovos</th>
-<th>Laranja</th>
-<th>Alface</th>
-</tr>
-<tr>
-<td id="Ovosa">0</td>
-<td id="Laranjab">0</td>
-<td id="Alfacec">0</td>
-</tr>
-</table>
+    <script>
+        // valor inicial da tabela
+        let ovos = 0;
+        let laranja = 0;
+        let alface = 0;
 
-<script>
-// valor inicial da tabela
-let ovos = 0;
-let laranja = 0;
-let alface = 0;
+        function atualizarTabela() {
+            document.getElementById('Ovos4').textContent = ovos;
+            document.getElementById('Laranja5').textContent = laranja;
+            document.getElementById('Alface6').textContent = alface;
+        }
 
-function atualizarTabela() {
-document.getElementById('Ovos4').textContent = ovos;
-document.getElementById('Laranja5').textContent = laranja;
-document.getElementById('Alface6').textContent = alface;
-}
+        // comando das teclas
+        document.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case '4':
+                    ovos++;
+                    atualizarTabela();
+                    break;
+                case '5':
+                    laranja++;
+                    atualizarTabela();
+                    break;
+                case '6':
+                    alface++;
+                    atualizarTabela();
+                    break;
+            }
+        });
+    </script>
 
-// comando das teclas
-document.addEventListener('keydown', function (event) {
-switch (event.key) {
-case '4':
-ovos++;
-atualizarTabela();
-break;
-case '5':
-laranja++;
-atualizarTabela();
-break;
-case '6':
-alface++;
-atualizarTabela();
-break;
-}
-});
-</script>
+    <section class="gsr">
+        <div>
+            <h1>Alimentos vendidos para mercados</h1>
+            <br>
+            <br>
+            <img src="images.jpg" alt="muda de alface">
+        </div>
+    </section>
 
-<section class="gsr">
-<div>
-<h1>Alimentos vendidos para mercados</h1>
-<br>
-<br>
-<img src="images.jpg" alt="muda de alface">
-</div>
-</section>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
 
-<style>
-table {
-border-collapse: collapse;
-width: 300px;
-margin: 50px auto;
-text-align: center;
-}
-td, th {
-border: 1px solid #f0f0f0;
-padding: 10px;
-}
-th {
-background-color: #f0f0f0;
-}
-caption {
-margin-bottom: 10px;
-font-size: 1.2em;
-font-weight: bold;
-}
-</style>
+        td,
+        th {
+            border: 1px solid #f0f0f0;
+            padding: 10px;
+        }
 
-<table>
-<caption>Contagem de Alimentos</caption>
-<tr>
-<th>Ovos</th>
-<th>Laranja</th>
-<th>Alface</th>
-</tr>
-<tr>
-<td id="Ovosd">0</td>
-<td id="Laranjae">0</td>
-<td id="Alfacef">0</td>
-</tr>
-</table>
+        th {
+            background-color: #f0f0f0;
+        }
 
-<script>
-// valor inicial da tabela
-let ovos = 0;
-let laranja = 0;
-let alface = 0;
+        caption {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
 
-function atualizarTabela() {
-document.getElementById('Ovosd').textContent = ovos;
-document.getElementById('Laranjae').textContent = laranja;
-document.getElementById('Alfacef').textContent = alface;
-}
+    <table>
+        <caption>Contagem de Alimentos</caption>
+        <tr>
+            <th>Ovos</th>
+            <th>Laranja</th>
+            <th>Alface</th>
+        </tr>
+        <tr>
+            <td id="Ovosd">0</td>
+            <td id="Laranjae">0</td>
+            <td id="Alfacef">0</td>
+        </tr>
+    </table>
 
-// comando das teclas
-document.addEventListener('keydown', function (event) {
-switch (event.key) {
-case 'd':
-ovos++;
-atualizarTabela();
-break;
-case 'e':
-laranja++;
-atualizarTabela();
-break;
-case 'f':
-alface++;
-atualizarTabela();
-break;
-}
-});
-</script>
+    <script>
+        // valor inicial da tabela
+        let ovos = 0;
+        let laranja = 0;
+        let alface = 0;
+
+        function atualizarTabela() {
+            document.getElementById('Ovosd').textContent = ovos;
+            document.getElementById('Laranjae').textContent = laranja;
+            document.getElementById('Alfacef').textContent = alface;
+        }
+
+        // comando das teclas
+        document.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case 'd':
+                    ovos++;
+                    atualizarTabela();
+                    break;
+                case 'e':
+                    laranja++;
+                    atualizarTabela();
+                    break;
+                case 'f':
+                    alface++;
+                    atualizarTabela();
+                    break;
+            }
+        });
+    </script>
 </body>
 </head>
+
 </html>
 
 <html>
+
 <body>
-<section class="gsr">
-<div>
-<h1>Alimentos vendidos para o público</h1>
-<br>
-<br>
-<img src="images.jpg" alt="muda de alface">
-</div>
-</section>
+    <section class="gsr">
+        <div>
+            <h1>Alimentos vendidos para o público</h1>
+            <br>
+            <br>
+            <img src="images.jpg" alt="muda de alface">
+        </div>
+    </section>
 
-<style>
-table {
-border-collapse: collapse;
-width: 300px;
-margin: 50px auto;
-text-align: center;
-}
-td, th {
-border: 1px solid #f0f0f0;
-padding: 10px;
-}
-th {
-background-color: #f0f0f0;
-}
-caption {
-margin-bottom: 10px;
-font-size: 1.2em;
-font-weight: bold;
-}
-</style>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
 
-<table>
-<caption>Contagem de Alimentos</caption>
-<tr>
-<th>Ovos</th>
-<th>Laranja</th>
-<th>Alface</th>
-</tr>
-<tr>
-<td id="Ovosg">0</td>
-<td id="Laranjah">0</td>
-<td id="Alfacei">0</td>
-</tr>
-</table>
+        td,
+        th {
+            border: 1px solid #f0f0f0;
+            padding: 10px;
+        }
 
-<script>
-// valor inicial da tabela
-let ovos = 0;
-let laranja = 0;
-let alface = 0;
+        th {
+            background-color: #f0f0f0;
+        }
 
-function atualizarTabela() {
-document.getElementById('Ovosg').textContent = ovos;
-document.getElementById('Laranjah').textContent = laranja;
-document.getElementById('Alfacei').textContent = alface;
-}
+        caption {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
 
-// comando das teclas
-document.addEventListener('keydown', function (event) {
-switch (event.key) {
-case 'g':
-ovos++;
-atualizarTabela();
-break;
-case 'h':
-laranja++;
-atualizarTabela();
-break;
-case 'i':
-alface++;
-atualizarTabela();
-break;
-}
-});
-</script>
+    <table>
+        <caption>Contagem de Alimentos</caption>
+        <tr>
+            <th>Ovos</th>
+            <th>Laranja</th>
+            <th>Alface</th>
+        </tr>
+        <tr>
+            <td id="Ovosg">0</td>
+            <td id="Laranjah">0</td>
+            <td id="Alfacei">0</td>
+        </tr>
+    </table>
+
+    <script>
+        // valor inicial da tabela
+        let ovos = 0;
+        let laranja = 0;
+        let alface = 0;
+
+        function atualizarTabela() {
+            document.getElementById('Ovosg').textContent = ovos;
+            document.getElementById('Laranjah').textContent = laranja;
+            document.getElementById('Alfacei').textContent = alface;
+        }
+
+        // comando das teclas
+        document.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case 'g':
+                    ovos++;
+                    atualizarTabela();
+                    break;
+                case 'h':
+                    laranja++;
+                    atualizarTabela();
+                    break;
+                case 'i':
+                    alface++;
+                    atualizarTabela();
+                    break;
+            }
+        });
+    </script>
 </body>
 </head>
+
 </html>
 
 <html>
+
 <body>
-<footer>
-Aydee Dias - criadora
-<div class="gfd">
-<h3>Colégio Estadual do Paraná</h3>
-<p>Turma 3°K</p>
-</div>
-<p class="gfd">Rua Qualquer, 123, Cidade Qualquer</p>
-<p class="gfd">ola@grandesite.com.br</p>
-</footer>
+    <footer>
+        Aydee Dias - criadora
+        <div class="gfd">
+            <h3>Colégio Estadual do Paraná</h3>
+            <p>Turma 3°K</p>
+        </div>
+        <p class="gfd">Rua Qualquer, 123, Cidade Qualquer</p>
+        <p class="gfd">ola@grandesite.com.br</p>
+    </footer>
 </body>
+
 </html>
