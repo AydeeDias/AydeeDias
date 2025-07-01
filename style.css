@@ -15,29 +15,27 @@ header{
 }
 
 table {
-    background-color: #101728;
-    border-collapse: collapse;
-    width: 300px;
-    text-align: center;
-    margin: 50px auto;
-}
-td, th {
-    background-color: #101728;
-    color: white;
-    border: 1px solid #101728;
-    padding: 10px;
-}
-th {
-    background-color: #101728;
-    color: white
-}
-caption {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: #101728;
-    color: white;
-}
+            border-collapse: collapse;
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 1px solid #101728;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        caption {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
 
 ul li{
     list-style: none;
